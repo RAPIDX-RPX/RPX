@@ -1,0 +1,54 @@
+/* General styles for mining protocol and background design */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: linear-gradient(135deg, rgba(255, 0, 0, 0.8), rgba(0, 0, 255, 0.8)), url('https://example.com/background-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+}
+
+/* Mining Stats Animation */
+.mining-stats ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.mining-stats li {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.mining-animation img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}

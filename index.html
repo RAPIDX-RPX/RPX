@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAPIDx (RPX) - Official Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://ibb.co/vkGxPD7" type="image/x-icon">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #fff;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff4757;
+        }
+
+        .hero {
+            background-image: url('hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Roadmap Section */
+        #roadmap {
+            background-color: #2c3e50;
+            padding: 40px 20px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .timeline ul {
+            list-style: none;
+            padding: 0;
+            position: relative;
+        }
+
+        .timeline ul li {
+            margin: 20px 0;
+            padding-left: 40px;
+            position: relative;
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
+        .timeline ul li::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background: #ff4757;
+        }
+
+        .timeline ul li .date {
+            position: absolute;
+            left: -70px;
+            background: #ff4757;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Connect Section */
+        #connect ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #connect img {
+            width: 40px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #connect img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Button Styles */
+        .button {
+            background-color: #ff4757; /* Button color */
+            color: #fff; /* Text color */
+            padding: 10px 20px; /* Padding */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            font-size: 1rem; /* Font size */
+            text-decoration: none; /* No underline */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+            display: inline-block; /* Make it block level */
+        }
+
+        .button:hover {
+            background-color: #e84118; /* Darker shade on hover */
+            transform: translateY(-2px); /* Lift effect on hover */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="img_1 (9).png" alt="Rapidx Logo" width="100">
+            <h1>RAPIDx (RPX)</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a class="button" href="https://pancakeswap.finance/swap?outputCurrency=0x9a35ddA04124c3ca97AB937dDA00Aa29BEfBDc58">Connect Wallet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2>Launching Soon: RP and X Blockchain</h2>
+            <p>Advanced technology to empower your future.</p>
+            <a class="button" href="https://pancakeswap.finance/swap?outputCurrency=0x9a35ddA04124c3ca97AB937dDA00Aa29BEfBDc58">Buy RPX</a>
+        </section>
+
+        <!-- Mining Protocol Section -->
+        <section id="mining-protocol">
+            <h2>Mining Protocol Coming Soon</h2>
+            <p>The decentralized RPX mining network will soon be available. Join us when it launches to earn rewards by contributing computational power to secure the network. Stay tuned!</p>
+
+            <div class="mining-animation">
+                <img src="minerstat_dribbble.gif" alt="Mining Visual">
+            </div>
+
+            <div class="mining-stats">
+                <h3>Mining Stats Coming Soon</h3>
+                <ul>
+                    <li>Total Hash Rate: <span id="hash-rate">N/A</span></li>
+                    <li>Blocks Mined: <span id="blocks-mined">N/A</span></li>
+                    <li>Total Miners: <span id="total-miners">N/A</span></li>
+                </ul>
+            </div>
+
+            <a class="button" href="#roadmap">Stay Informed</a>
+        </section>
+
+        <!-- Roadmap Section -->
+        <section id="roadmap">
+            <h2>Roadmap</h2>
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div class="date">Q4 2024</div>
+                        Testnet Launch
+                    </li>
+                    <li>
+                        <div class="date">Q1 2025</div>
+                        X Network Launch
+                    </li>
+                    <li>
+                        <div class="date">Q2 2025</div>
+                        RP Network Launch
+                    </li>
+                    <li>
+                        <div class="date">Q3 2025</div>
+                        Listing on Major Exchanges
+                    </li>
+                    <li>
+                        <div class="date">Q4 2025</div>
+                        Partnership with Big Firms
+                    </li>
+                    <li>
+                        <div class="date">Q4 2025</div>
+                        Mining Protocol
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team">
+            <h2>Our Team</h2>
+            <p><strong>CEO & Founder:</strong> Zain</p>
+            <p><strong>CTO & Co-Founder:</strong> Faraz</p>
+        </section>
+
+        <!-- Connect Section -->
+        <section id="connect">
+            <h2>Connect with Us</h2>
+            <p>Follow us on:</p>
+            <ul>
+                <li>
+                    <a href="https://x.com/Rapidx_Rpx" target="_blank" aria-label="Follow us on Twitter">
+                        <img src="download.png" alt="Twitter Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/RAPIDxANNOUNCEMENT" target="_blank" aria-label="Join our Telegram Announcement Channel">
+                        <img src="download1-removebg-preview.png" alt="Telegram Announcement Logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/RAPIDXRPX" target="_blank" aria-label="Join our Telegram Official Channel">
+                        <img src="download1-removebg-preview.png" alt="Telegram Official Logo">
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>
